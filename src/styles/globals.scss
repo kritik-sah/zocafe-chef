@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+    font-family: var("--font-space-grotesk");
+    overflow-x: hidden;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.scrollBarHidden{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}
+
+
+// partials
+@import 'partials/alerts';
+@import 'partials/container';
+@import 'partials/order';
